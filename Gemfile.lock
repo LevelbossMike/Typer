@@ -75,6 +75,11 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
+    hamlbars (2.0.0)
+      execjs (>= 1.2)
+      haml
+      sprockets
+      tilt
     handlebars-source (1.0.0.rc3)
     hike (1.2.1)
     i18n (0.6.1)
@@ -156,6 +161,7 @@ DEPENDENCIES
   compass_twitter_bootstrap
   ember-rails
   haml-rails
+  hamlbars (~> 2.0)
   jquery-rails
   rails (= 3.2.13)
   rspec-rails (~> 2.0)
