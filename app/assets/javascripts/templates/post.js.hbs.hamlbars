@@ -1,9 +1,15 @@
+= hb 'if isEditing' do
+  = hb "partial 'post/edit'"
+  = hb 'else'
+  %button.btn{ _action: 'edit'}
+    Edit
+
 %h1= hb 'title'
 %h2
   = hb 'author'
   %small.muted= "(#{hb 'date publishedAt'})"
 %hr
 .intro
-  = hb 'intro'
+  = hb 'markdown intro'
 .below-the-fold
   = hb 'markdown extended'

@@ -18,5 +18,8 @@
 //= require ember-data
 //= require_self
 //= require typer
-Typer = Ember.Application.create({ rootElement: '.container' });
+Typer = Ember.Application.create({ 
+  rootElement: '.container',
+  LOG_TRANSITIONS: true
+});
 //= require_tree .
