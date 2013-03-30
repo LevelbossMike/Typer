@@ -2,12 +2,12 @@
   %fieldset
     %label
       Title
-    %p= hb 'view Ember.TextField', valueBinding: 'title', classNames: 'span9'
+    %p= hb 'view Ember.TextField', valueBinding: 'title', classNames: 'span4'
     %label
       Intro
-    %p= hb 'view Ember.TextArea', valueBinding: 'intro', classNames: 'span9'
+    %p= hb 'view Ember.TextArea', valueBinding: 'intro', classNames: 'span4'
     %label
       Extended
-    %p= hb "view Ember.TextArea", valueBinding: 'extended', classNames: 'span9', rows: 5
+    %p= hb "view Ember.TextArea", valueBinding: 'extended', classNames: 'span4', rows: 10
     %button.btn{ _action: 'doneEditing'}
       Done

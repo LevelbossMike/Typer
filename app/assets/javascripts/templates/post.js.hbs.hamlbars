@@ -1,15 +1,14 @@
-= hb 'if isEditing' do
-  = hb "partial 'post/edit'"
-  = hb 'else'
-  %button.btn{ _action: 'edit'}
-    Edit
-
-%h1= hb 'title'
-%h2
-  = hb 'author'
-  %small.muted= "(#{hb 'date publishedAt'})"
-%hr
-.intro
-  = hb 'markdown intro'
-.below-the-fold
-  = hb 'markdown extended'
+.row
+  = hb 'if isEditing' do
+    %div.span4
+      = hb "partial 'post/edit'"
+  %div{ bind: { class: 'controller.isEditing:span5:span9' } }
+    %h1= hb 'title'
+    %h2
+      = hb 'author'
+      %small.muted= "(#{hb 'date publishedAt'})"
+    %hr
+    .intro
+      = hb 'markdown intro'
+    .below-the-fold
+      = hb 'markdown extended'
