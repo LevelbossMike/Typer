@@ -1,3 +1,0 @@
-Typer.Router.map(function() {
-
-});

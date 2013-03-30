@@ -1,7 +1,13 @@
-%h1
-  Application
 
-%p
-  Your content here.
-
+.navbar
+  .navbar-inner
+    %a.brand{ href: '#' }
+      Typer
+    %ul.nav
+      %li
+        = hb 'linkTo posts' do
+          Posts
+      %li
+        = hb 'linkTo about' do
+          About
 = hb 'outlet'

@@ -1,0 +1,9 @@
+%h1= hb 'title'
+%h2
+  = hb 'author'
+  %small.muted= "(#{hb 'date publishedAt'})"
+%hr
+.intro
+  = hb 'intro'
+.below-the-fold
+  = hb 'markdown extended'

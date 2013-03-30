@@ -1,0 +1,16 @@
+.container
+  .row
+    .span3
+      %table.table
+        %thead
+          %tr
+            %th
+              Recent Posts
+        = hb 'each model' do
+          %tr
+            %td
+              = hb 'linkTo post this' do
+                = "#{hb 'title'}"
+              %small.muted= "by #{hb 'author'}"
+    .span9
+      = hb 'outlet'

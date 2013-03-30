@@ -12,10 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_directory ./external
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require_self
 //= require typer
-Typer = Ember.Application.create();
+Typer = Ember.Application.create({ rootElement: '.container' });
 //= require_tree .
