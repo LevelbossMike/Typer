@@ -4,3 +4,4 @@ Typer.PostController = Ember.ObjectController.extend
 
   doneEditing: ->
     @set('isEditing', false)
+    @get('store').commit()
