@@ -16,6 +16,7 @@
 //= require handlebars
 //= require ember
 //= require ember-data
+//= require ember-auth
 //= require_self
 //= require typer
 Typer = Ember.Application.create({ 

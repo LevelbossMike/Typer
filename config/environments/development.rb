@@ -37,4 +37,7 @@ Typer::Application.configure do
 
   # Ember configuration
   config.ember.variant = :development
+
+  # Devise stuff
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 end

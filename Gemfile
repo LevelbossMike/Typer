@@ -24,8 +24,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'ember-rails'
 gem 'haml-rails'
+gem 'devise'
+
+gem 'ember-rails'      # ember package
+gem 'ember-auth-rails' # ember authentication
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
