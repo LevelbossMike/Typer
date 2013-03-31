@@ -1,4 +1,9 @@
+require 'bcrypt'
+
 Typer::Application.configure do
+  silence_warnings do
+    BCrypt::Engine::DEFAULT_COST = BCrypt::Engine::MIN_COST
+  end
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's
@@ -34,4 +39,7 @@ Typer::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Devise stuff
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 end

@@ -32,6 +32,10 @@ gem 'ember-auth-rails' # ember authentication
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
+  gem 'spork'
+  gem 'database_cleaner'
+  gem 'fabrication'
+  gem 'shoulda'
 end
 
 # To use ActiveModel has_secure_password
