@@ -10,4 +10,5 @@
       Extended
     %p= hb "view Ember.TextArea", valueBinding: 'extended', classNames: 'span4', rows: 10
     %button.btn{ _action: 'doneEditing'}
-      Done
+      %i.icon-ok
+        Save
