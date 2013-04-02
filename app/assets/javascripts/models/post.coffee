@@ -4,6 +4,11 @@ Typer.Post = DS.Model.extend
   intro: DS.attr('string')
   extended: DS.attr('string')
   publishedAt: DS.attr('date')
+  bigTitle: (->
+    title = @get('title')
+    title = "<NONE>" if Ember.isEmpty(title)
+    title.toUpperCase()
+  ).property('title')
 
 Typer.Post.FIXTURES = [
   {
