@@ -36,6 +36,9 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'fabrication'
   gem 'shoulda'
+
+  gem 'poltergeist'
+  gem 'konacha'
 end
 
 # To use ActiveModel has_secure_password
